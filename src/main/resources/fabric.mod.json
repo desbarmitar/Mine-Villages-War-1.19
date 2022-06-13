@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "minevillageswar",
+  "version": "${version}",
+
+  "name": "Mine Villages War",
+  "description": "This mod simulates Travian and Tribal Wars.",
+  "authors": [
+    "Desbarmitar"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.desbarmitar.minevillageswar.MineVillagesWar"
+    ],
+    "client": [
+      "net.desbarmitar.minevillageswar.MineVillagesWarClient"
+    ]
+  },
+  "mixins": [
+    "minevillageswar.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.7",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
